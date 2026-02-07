@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Rebeka's portfolio — Frontend developer & designer from Croatia. Responsive design, modern web experiences." />
+  <title>Rebeka | Developer & Designer · Croatia</title>
+  <link rel="icon" href="image/face.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <img src="image/face.png" alt="" class="nav__logo-img" width="36" height="36" />
+        <span>Rebeka</span>
+      </a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#hero" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#reviews" class="nav__link">Reviews</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__theme-wrap">
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme">
+            <span class="theme-toggle__icon theme-toggle__sun" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5" />
+                <path
+                  d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+              </svg>
+            </span>
+            <span class="theme-toggle__icon theme-toggle__moon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </span>
+          </button>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__carousel">
+          <img src="image/hero.jpg" alt="" class="hero__slide hero__slide--1" width="1920" height="1080" />
+          <img src="image/hero1.jpg" alt="" class="hero__slide hero__slide--2" width="1920" height="1080" />
+          <img src="image/hero2.jpg" alt="" class="hero__slide hero__slide--3" width="1920" height="1080" />
+          <img src="image/hero3.jpg" alt="" class="hero__slide hero__slide--4" width="1920" height="1080" />
+          <img src="image/hero4.jpg" alt="" class="hero__slide hero__slide--5" width="1920" height="1080" />
+        </div>
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content container">
+        <p class="hero__label">Hello, I'm</p>
+        <h1 class="hero__title" id="hero-title" aria-label="Rebeka"><span class="hero__title-text"></span><span
+            class="hero__title-cursor" aria-hidden="true">|</span></h1>
+        <p class="hero__subtitle">E-commerce | AI | Full Stack | Design | WordPress — Building responsive, accessible,
+          and performant web experiences from Croatia.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--outline">Get in Touch</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__image-wrap animate-on-scroll">
+          <img src="image/about.jpg" alt="Rebeka — professional headshot" class="about__img" width="600" height="600" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__title animate-on-scroll">About Me</h2>
+          <p class="about__lead">I'm Rebeka, graduated from the University of Zagreb (2014–2018) and have over 7 years
+            of experience in the software development field.</p>
+          <p> During my career, I’ve developed numerous e-commerce websites using platforms such as WordPress, Shopify,
+            and Wix. I specialize in UI design, focusing on creating clean, user-friendly, and visually engaging
+            interfaces. I’m passionate about turning ideas into high-quality digital products and can successfully bring
+            your vision to life.</p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__value">7+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">50+</span>
+              <span class="stat__label">Projects Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">30+</span>
+              <span class="stat__label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education section section--alt" id="education">
+      <div class="container">
+        <h2 class="section__title section__title--center animate-on-scroll">Education</h2>
+        <div class="education__card animate-on-scroll">
+          <div class="education__image-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/UniZg.png" alt="University of Zagreb"
+              class="education__image" width="180" height="180" loading="lazy" />
+          </div>
+          <h3 class="education__school">University of Zagreb</h3>
+          <p class="education__location">
+            <span class="education__location-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </span>
+            Zagreb, Croatia
+          </p>
+          <p class="education__degree">Computer Science, Bachelor's degree</p>
+          <p class="education__date">2014 – 2018</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title section__title--center animate-on-scroll">Skills & Expertise</h2>
+        <p class="section__subtitle animate-on-scroll animate-on-scroll-delay-1">Graphic design, web development, UI,
+          and full stack — from concept to launch.</p>
+        <div class="skills__grid">
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-1">
+            <div class="skill-card__icon"><img src="image/graphic.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">Graphic Design</h3>
+            <p>Logos, branding, marketing visuals, and digital assets.</p>
+          </div>
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-2">
+            <div class="skill-card__icon"><img src="image/wordpress.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">WordPress & Elementor</h3>
+            <p>Custom WordPress sites with Elementor and easy updates.</p>
+          </div>
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-2">
+            <div class="skill-card__icon"><img src="image/code.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">HTML & UI</h3>
+            <p>Semantic HTML, responsive layouts, accessible UIs.</p>
+          </div>
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-3">
+            <div class="skill-card__icon"><img src="image/analytics.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">Webflow</h3>
+            <p>Custom Webflow sites with animations and CMS.</p>
+          </div>
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-3">
+            <div class="skill-card__icon"><img src="image/figma.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">Figma</h3>
+            <p>UI design: wireframes, prototypes, design systems.</p>
+          </div>
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-4">
+            <div class="skill-card__icon"><img src="image/coding.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">React</h3>
+            <p>Modern React apps: components, state, and performance.</p>
+          </div>
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-4">
+            <div class="skill-card__icon"><img src="image/graphic.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">Illustrator</h3>
+            <p>Vector graphics, icons, and illustration for brand and web.</p>
+          </div>
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-4">
+            <div class="skill-card__icon"><img src="image/figma.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">Digital Design</h3>
+            <p>Digital-first visuals, social assets, and web graphics.</p>
+          </div>
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-4">
+            <div class="skill-card__icon"><img src="image/coding.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">Full Stack & Node</h3>
+            <p>Node.js backend, APIs, databases, full applications.</p>
+          </div>
+          <div class="skill-card animate-on-scroll animate-on-scroll-delay-4">
+            <div class="skill-card__icon"><img src="image/ai.jpg" alt="" width="80" height="80" /></div>
+            <h3 class="skill-card__title">AI</h3>
+            <p>AI integration, automation, and smart features.</p>
+          </div>
+        </div>
+        <div class="skills__tags animate-on-scroll">
+          <span class="tag">Graphic Design</span>
+          <span class="tag">WordPress</span>
+          <span class="tag">HTML</span>
+          <span class="tag">UI / User Interface</span>
+          <span class="tag">Webflow</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Elementor</span>
+          <span class="tag">React</span>
+          <span class="tag">Illustrator</span>
+          <span class="tag">Digital Design</span>
+          <span class="tag">Node</span>
+          <span class="tag">Full Stack</span>
+          <span class="tag">AI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title section__title--center animate-on-scroll">Featured Projects</h2>
+        <p class="section__subtitle animate-on-scroll animate-on-scroll-delay-1">Graphic design, WordPress, Webflow, UI,
+          full stack, and AI — a selection of recent work.</p>
+        <div class="projects__grid">
+          <article class="project-card animate-on-scroll">
+            <a href="#" class="project-card__link">
+              <div class="project-card__image">
+                <img src="image/graphic.jpg" alt="Graphic design project" width="800" height="500" />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Brand & Graphic Design</h3>
+                <p>Visual identity, logos, and marketing assets for brands. Consistent, professional graphic design
+                  across print and digital.</p>
+                <span class="project-card__tech">Graphic Design · Figma · Branding</span>
+              </div>
+            </a>
+          </article>
+          <article class="project-card animate-on-scroll animate-on-scroll-delay-2">
+            <a href="#" class="project-card__link">
+              <div class="project-card__image">
+                <img src="image/wordpress.jpg" alt="WordPress and Elementor project" width="800" height="500" />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">WordPress Site with Elementor</h3>
+                <p>Business website built on WordPress with Elementor: custom layouts, responsive design, and easy
+                  client updates.</p>
+                <span class="project-card__tech">WordPress · Elementor · UI</span>
+              </div>
+            </a>
+          </article>
+          <article class="project-card animate-on-scroll animate-on-scroll-delay-2">
+            <a href="#" class="project-card__link">
+              <div class="project-card__image">
+                <img src="image/analytics.jpg" alt="Webflow website project" width="800" height="500" />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Webflow Website</h3>
+                <p>Custom site designed and built in Webflow with animations, CMS collections, and responsive layouts.
+                </p>
+                <span class="project-card__tech">Webflow · UI · Responsive</span>
+              </div>
+            </a>
+          </article>
+          <article class="project-card animate-on-scroll animate-on-scroll-delay-3">
+            <a href="#" class="project-card__link">
+              <div class="project-card__image">
+                <img src="image/web.png" alt="UI design in Figma" width="800" height="500" />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">UI / User Interface Design</h3>
+                <p>App and web UI designed in Figma: wireframes, prototypes, and design systems for development handoff.
+                </p>
+                <span class="project-card__tech">Figma · UI · User Interface</span>
+              </div>
+            </a>
+          </article>
+          <article class="project-card animate-on-scroll animate-on-scroll-delay-3">
+            <a href="#" class="project-card__link">
+              <div class="project-card__image">
+                <img src="image/insurance.png" alt="Full stack application" width="800" height="500" />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Full Stack Web App</h3>
+                <p>End-to-end application with Node.js backend, database, and responsive frontend. APIs and
+                  authentication.</p>
+                <span class="project-card__tech">Node · Full Stack · HTML</span>
+              </div>
+            </a>
+          </article>
+          <article class="project-card animate-on-scroll animate-on-scroll-delay-4">
+            <a href="#" class="project-card__link">
+              <div class="project-card__image">
+                <img src="image/ai.jpg" alt="AI-powered project" width="800" height="500" />
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">AI-Powered Tool</h3>
+                <p>Integration of AI features: automation, smart recommendations, or conversational interfaces for a
+                  better user experience.</p>
+                <span class="project-card__tech">AI · Integration · Web</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Reviews -->
+    <section class="reviews section section--alt" id="reviews">
+      <div class="container">
+        <h2 class="section__title section__title--center animate-on-scroll">Client Reviews</h2>
+        <p class="section__subtitle animate-on-scroll animate-on-scroll-delay-1">What clients say about working with me.
+        </p>
+        <div class="reviews__track">
+          <div class="reviews__flow">
+            <div class="reviews__flow-group">
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"Rebeka delivered our WordPress site ahead of schedule. Professional,
+                  responsive, and great at turning our ideas into a clean design. Highly recommend!"</p>
+                <footer class="review-card__author">
+                  <img src="image/client1.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Mark Johnson</cite>
+                    <span class="review-card__role">Founder, TechStart — WordPress</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"The Webflow build exceeded our expectations. Rebeka is easy to work with
+                  and really understands both design and development. Our site looks stunning."</p>
+                <footer class="review-card__author">
+                  <img src="image/client2.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Sarah Miller</cite>
+                    <span class="review-card__role">Marketing Director — Webflow</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"From graphic design to full stack features, Rebeka handled everything with
+                  care. Our project was complex and she made it look simple. Will hire again."</p>
+                <footer class="review-card__author">
+                  <img src="image/client3.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">David Chen</cite>
+                    <span class="review-card__role">Product Manager — Full Stack</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"Our brand identity and logo design by Rebeka gave us a clear, professional
+                  look. The graphic design work was creative and on brand. Very happy with the result."</p>
+                <footer class="review-card__author">
+                  <img src="image/client4.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Emma Wilson</cite>
+                    <span class="review-card__role">CEO — Graphic Design</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"The UI and Figma prototypes were exactly what we needed for our app.
+                  Clean, modern, and easy for our dev team to implement. Rebeka’s eye for detail is outstanding."</p>
+                <footer class="review-card__author">
+                  <img src="image/client5.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">James Lee</cite>
+                    <span class="review-card__role">UX Lead — UI / Figma</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"We needed a custom WordPress site with Elementor. Rebeka built it fast,
+                  responsive, and easy for us to update. Communication was smooth from start to finish."</p>
+                <footer class="review-card__author">
+                  <img src="image/client6.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Anna Kowalski</cite>
+                    <span class="review-card__role">Owner — WordPress & Elementor</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"The HTML/CSS and UI work was pixel-perfect. Our landing page converted
+                  much better after Rebeka’s redesign. She really gets responsive design and usability."</p>
+                <footer class="review-card__author">
+                  <img src="image/client7.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Tom Harris</cite>
+                    <span class="review-card__role">Growth Manager — HTML & UI</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"Rebeka integrated AI features into our product and improved our workflows.
+                  She’s not only a great designer but also understands modern tech. A real asset."</p>
+                <footer class="review-card__author">
+                  <img src="image/client8.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Nina Petrov</cite>
+                    <span class="review-card__role">CTO — AI Integration</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"Our digital design and social assets by Rebeka helped us stand out.
+                  Consistent visuals, fast delivery, and a pleasure to work with. We’ll come back for more."</p>
+                <footer class="review-card__author">
+                  <img src="image/client9.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Lisa Park</cite>
+                    <span class="review-card__role">Brand Manager — Digital Design</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"The React and Node.js app Rebeka built for us is solid and scalable. Great
+                  code quality, clear documentation, and she was always available when we had questions."</p>
+                <footer class="review-card__author">
+                  <img src="image/client10.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Alex Rivera</cite>
+                    <span class="review-card__role">Startup Founder — React & Node</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+            <!-- Duplicate group for seamless repeat flow -->
+            <div class="reviews__flow-group">
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"Rebeka delivered our WordPress site ahead of schedule. Professional,
+                  responsive, and great at turning our ideas into a clean design. Highly recommend!"</p>
+                <footer class="review-card__author">
+                  <img src="image/client1.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Mark Johnson</cite>
+                    <span class="review-card__role">Founder, TechStart — WordPress</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"The Webflow build exceeded our expectations. Rebeka is easy to work with
+                  and really understands both design and development. Our site looks stunning."</p>
+                <footer class="review-card__author">
+                  <img src="image/client2.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Sarah Miller</cite>
+                    <span class="review-card__role">Marketing Director — Webflow</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"From graphic design to full stack features, Rebeka handled everything with
+                  care. Our project was complex and she made it look simple. Will hire again."</p>
+                <footer class="review-card__author">
+                  <img src="image/client3.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">David Chen</cite>
+                    <span class="review-card__role">Product Manager — Full Stack</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"Our brand identity and logo design by Rebeka gave us a clear, professional
+                  look. The graphic design work was creative and on brand. Very happy with the result."</p>
+                <footer class="review-card__author">
+                  <img src="image/client4.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Emma Wilson</cite>
+                    <span class="review-card__role">CEO — Graphic Design</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"The UI and Figma prototypes were exactly what we needed for our app.
+                  Clean, modern, and easy for our dev team to implement. Rebeka's eye for detail is outstanding."</p>
+                <footer class="review-card__author">
+                  <img src="image/client5.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">James Lee</cite>
+                    <span class="review-card__role">UX Lead — UI / Figma</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"We needed a custom WordPress site with Elementor. Rebeka built it fast,
+                  responsive, and easy for us to update. Communication was smooth from start to finish."</p>
+                <footer class="review-card__author">
+                  <img src="image/client6.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Anna Kowalski</cite>
+                    <span class="review-card__role">Owner — WordPress & Elementor</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"The HTML/CSS and UI work was pixel-perfect. Our landing page converted
+                  much better after Rebeka's redesign. She really gets responsive design and usability."</p>
+                <footer class="review-card__author">
+                  <img src="image/client7.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Tom Harris</cite>
+                    <span class="review-card__role">Growth Manager — HTML & UI</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"Rebeka integrated AI features into our product and improved our workflows.
+                  She's not only a great designer but also understands modern tech. A real asset."</p>
+                <footer class="review-card__author">
+                  <img src="image/client8.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Nina Petrov</cite>
+                    <span class="review-card__role">CTO — AI Integration</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"Our digital design and social assets by Rebeka helped us stand out.
+                  Consistent visuals, fast delivery, and a pleasure to work with. We'll come back for more."</p>
+                <footer class="review-card__author">
+                  <img src="image/client9.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Lisa Park</cite>
+                    <span class="review-card__role">Brand Manager — Digital Design</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="review-card">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">"The React and Node.js app Rebeka built for us is solid and scalable. Great
+                  code quality, clear documentation, and she was always available when we had questions."</p>
+                <footer class="review-card__author">
+                  <img src="image/client10.jpg" alt="" class="review-card__avatar" width="48" height="48" />
+                  <div>
+                    <cite class="review-card__name">Alex Rivera</cite>
+                    <span class="review-card__role">Startup Founder — React & Node</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section section--alt" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <h2 class="section__title animate-on-scroll">Get in Touch</h2>
+          <p>Have a project in mind or want to collaborate? I'd love to hear from you. Send a message and I'll get back
+            as soon as I can.</p>
+          <div class="contact__image animate-on-scroll">
+            <img src="image/contact.webp" alt="Get in touch — two people shaking hands" width="600" height="400" />
+          </div>
+        </div>
+        <form class="contact__form" id="contact-form" action="#" method="post">
+          <label class="form__label" for="name">Name</label>
+          <input type="text" id="name" name="name" class="form__input" required placeholder="Your name" />
+          <label class="form__label" for="email">Email</label>
+          <input type="email" id="email" name="email" class="form__input" required placeholder="your@email.com" />
+          <label class="form__label" for="message">Message</label>
+          <textarea id="message" name="message" class="form__input form__textarea" rows="5" required
+            placeholder="Your message..."></textarea>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2025 Rebeka. All rights reserved.</p>
+      <nav class="footer__nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button type="button" class="up-btn" id="up-btn" aria-label="Scroll to top" title="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
