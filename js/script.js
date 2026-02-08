@@ -77,8 +77,54 @@
     });
   });
 
-  // Contact form: send to Discord webhook
+  // Discord webhook (contact form + visit alerts)
   const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1469657142465396788/kj0WK50u_eKczkis7pPt4XVlnWBZ2XW0YtTWohDDtsY7j_OmJRPtaH9qrVCkL6U1mz9N";
+
+  // Portfolio visit alert: send IP to Discord once per tab (until tab is closed)
+  var VISIT_SENT_KEY = "portfolio-visit-alert-sent";
+  function sendVisitAlert() {
+    try {
+      if (sessionStorage.getItem(VISIT_SENT_KEY)) return;
+    } catch (e) { return; }
+    fetch("https://api.ipify.org?format=json")
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        var ip = data.ip || "unknown";
+        var payload = {
+          content: null,
+          embeds: [
+            {
+              title: "Portfolio visit",
+              color: 3447003,
+              fields: [
+                { name: "IP address", value: ip, inline: true },
+                { name: "Time", value: new Date().toISOString(), inline: true },
+                { name: "Page", value: window.location.href || "—", inline: false },
+                { name: "User agent", value: (navigator.userAgent || "—").slice(0, 1000), inline: false },
+              ],
+              timestamp: new Date().toISOString(),
+            },
+          ],
+        };
+        return fetch(DISCORD_WEBHOOK_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+      })
+      .then(function (res) {
+        if (res && res.ok) {
+          try { sessionStorage.setItem(VISIT_SENT_KEY, "1"); } catch (e) {}
+        }
+      })
+      .catch(function () {});
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", sendVisitAlert);
+  } else {
+    sendVisitAlert();
+  }
+
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
